@@ -15,3 +15,6 @@ ALTER TABLE usuarios_renom ADD CONSTRAINT uq_email UNIQUE(email);
 
 # Borrar una columna #
 ALTER TABLE usuarios_renom DROP website;
+
+# Cambiar el id autoincrementable al valor 'auto_increment'
+ALTER TABLE usuarios auto_increment=10;
